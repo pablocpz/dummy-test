@@ -20,12 +20,7 @@ export default function CriminalsList() {
   return (
     <ul>
       {criminals.map((criminal, index) => (
-        <li key={index}>
-          <p>{criminal.name}</p>
-          {criminal.images && criminal.images.length > 0 && (
-            <img src={criminal.images[0]} alt={criminal.name} style={{maxWidth: '100px'}} />
-          )}
-        </li>
+        <li key={index}>{criminal.name}</li>
       ))}
     </ul>
   );
